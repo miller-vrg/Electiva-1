@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <form action="creditos.php" method="post">
+                <legend><b>Ingrese los datos requeridos</b></legend>
+                    <fieldset style="width:55%; text-align: left">
+                        <table>
+                    <tr>
+                        <th>Cantidad de cuotas: </th> <td> <input type="number" name="cuotas" min="1" placeholder="numeros" required></td>
+                    </tr><br>
+                    <tr>
+                        <th>Fecha: </th> <td> <input type="date" name="fecha" required> </td>
+                    </tr>
+                    <tr>
+                    <th>Valor del credito: </th> <td><input type="number" name="valor" step="any" min="10000" placeholder="$ valor" required></td>
+                    </tr>
+                    <tr>
+                        <th>Integeres: </th> <td><input type="number" step="any" placeholder="Valor numerico" required></td>
+                    </tr>
+                    <tr><td colspan="2"><hr></td></tr>
+                    <tr><th><input type="submit"> <td><input type="reset"></td></th></tr>
+                </table>
+                    </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
