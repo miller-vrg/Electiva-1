@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <center>
+            <form action="proceso.php" method="post">
+                <fieldset style="width:30%">
+                    <table>
+                <tr>
+                    <td>Producto: </td>
+                    <td> <input type="text" placeholder="Nombre del producto" required></td>
+                </tr>
+                <tr>
+                    <td>Cantidad: </td>
+                    <td> <input type="number" min="0" placeholder="1...." required></th>
+                </tr>
+                <tr>
+                    <td> Precio: </td>
+                    <td> <input type="number" step="any" min="50" placeholder="$..." required></td>
+                </tr>
+                <tr>
+                    <td>Iva: %</td>
+                    <td> <input type="number" step="any" min="1" placeholder="%" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td> <input type="submit"> </td>
+                    <td> <input type="reset"> </td>
+                </tr>
+            </table>
+                </fieldset>
+            </form>
+        </center>
+
+    </body>
+</html>
