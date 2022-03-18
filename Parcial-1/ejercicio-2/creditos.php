@@ -57,7 +57,7 @@
                             <th><b> interes </b></th>
                             <th><b> Valor a pagar </b></th>
                         </tr> 
-                        <?php llenar_tabla();?>
+                        <?= llenar_tabla();?>
                     </table>
             </form>
         </center>
