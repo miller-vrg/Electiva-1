@@ -1,0 +1,152 @@
+:root{
+    --color-font:#ffd68d;
+    --color-fondo:#29294d;
+    --sobra:#120f07;
+    --enfoque:white;
+    --font-mx:150px;
+    --font-md:40px;
+    --font-size-button:40px;
+
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background:var(--color-fondo);
+}
+
+.container{
+    
+    height:100vh;
+    display:flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+
+}
+
+.container-interno{
+    width:100%;
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    
+    font-size:var(--font-mx);
+    color:var(--color-font);
+}
+.subtitulo{
+    font-size: var(--font-md);
+    color:var(--color-font);
+}
+
+
+.encabezado{
+    margin:0;
+   width: 100%;
+   height:50vh;
+   text-align: center;
+   overflow:hidden;
+}
+
+
+.caja-botones{
+    margin:0;
+    width: 100%;
+    height:60vh;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+button{
+    width:60%;
+    height:15%;
+    border:none;
+    margin-bottom: 50px;
+    border-radius:10px;
+    background:var(--color-font);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 12px 20px 0px var(--sobra) ;
+    overflow:hidden;
+    
+}
+
+
+.textButton{
+  font-size: var(--font-md);
+  font-weight:bold;
+}
+
+button:hover{
+    color:var(--color-font);
+    background:var(--enfoque);
+    border:1px solid var(--color-font);
+}
+
+@media (min-width: 1200px) {
+    :root{
+        --font-mx:90px;
+        --font-md:20px;
+    }
+    .encabezado{
+       height:100vh;
+    }
+    
+    .caja-botones{
+        width: 100%;
+        height:60vh;
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    button{
+        height:45%;
+        border:none;
+    }
+}
+@media (max-height: 1200px){
+    :root{
+        --font-mx:490%;
+        --font-md:120%;
+    }
+    .encabezado{
+       height:70vh;
+    }
+    
+    .container-interno{
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja-botones{
+        margin-bottom:50px;
+        width: 80%;
+        height:40vh;
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    button{
+        width:25%;
+        height:25%;
+        border:none;
+        justify-items: center;
+        margin-top: 0;
+    }
+}
+   
+
+    
+
