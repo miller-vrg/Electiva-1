@@ -1,0 +1,36 @@
+   <?php
+   session_start();
+   require_once "../partials/student-date.php";
+
+   
+   ?>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Notas ::.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-notas.css">
+   </head>
+   <body>
+   <nav  class="cabecera">
+            <button class="btn" onclick="location='../pages/home.php'">Regresar</button>
+            <p class="titulo">Practicas</p>
+      </nav>
+    <section>
+        <div class="container">
+            <div class="formulario">
+                <form action="/pages/notas" method="post">
+                    <table>
+                       <?= llenarNotas()?>
+                        </table>
+                </form>
+            </div>
+        </div>
+    </section>
+   </body>
+   </html>

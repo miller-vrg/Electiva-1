@@ -6,7 +6,7 @@
     <body>
         <center>
             <h4>Ejemplo de formulario HTML</h4>
-            <form action="registra_persona.php">
+            <form name="formu">
                 <fieldset style="width: 40%;text-align: left">
                     <legend>Ingrese los datos</legend>
                     <table>
@@ -15,12 +15,20 @@
                             <td><input type="text" name="nombre"></td>
                         </tr>
                         <tr>
-                            <th><input type="submit"></th>&nbsp;&nbsp;
+                            <th><input type="submit" onclick="datos()"></th>&nbsp;&nbsp;
                             <td><input type="reset"></td>
                         </tr>
                     </table>
                 </fieldset>
             </form>
+            <p id="dato">Nombre: </p>
         </center>
+        <script>
+            function datos(){
+                 name = document.formu.nombre.value;
+                document.getElementById("dato").innerHTML = "Nombre: " + name;
+            }
+        </script>
+        
     </body>
 </html>

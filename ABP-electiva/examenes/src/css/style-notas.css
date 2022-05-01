@@ -1,0 +1,148 @@
+:root{
+    --color-font:#ffd68d;
+    --color-fondo:#29294d;
+    --sobra:#120f07;
+    --enfoque:white;
+    --font-mx:23px;
+    --font-md:15px;
+    --font-size-button:40px;
+
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    color:var(--color-font);
+}
+
+body{
+    background:var(--color-fondo);
+}
+
+.container{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    background:white;
+    flex-direction: column;
+    align-content:center;
+}
+
+.cabecera{
+    margin:0;
+    width: 97%;
+    height:10vh;
+    height:5%;
+    position: fixed;
+    top:0;
+    display:flex;
+    justify-content: center;
+    border:none;
+    border-radius:8px;
+    align-items: center;
+    overflow:hidden;
+    background:var(--color-font);
+}
+
+.titulo{
+    margin:0;
+    font-weight:bold;
+    color:var(--color-fondo);
+}
+
+.btn{
+    margin:0;
+    width:20%;
+    border:none;
+    border-radius: 5px;
+    height:70%;
+    justify-self: flex-start;
+    background:var(--color-fondo);
+    font-weight:bold;
+}
+
+button:hover{
+    color:var(--color-font);
+    border:1px solid var(--color-fondo);
+    background:white;
+}
+
+.formulario{
+    margin:0;
+    width: 100%;
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.formulario table{
+    margin:0;
+    width: 100%;
+    text-align: left;
+}
+
+.tr1{
+    background:var(--color-fondo);
+    width:100%;
+}
+
+.tr1 #th1{
+    width:35%;
+}
+
+.tr1 #th2{
+    width:35%;
+}
+
+.tr1 #th3{
+    width:15%;
+}
+
+.tr1 #th4{
+    width:15%;
+}
+
+.tr2 #td1{
+    width:35%;
+}
+
+.tr2 #td2{
+    width:35%;
+}
+
+.tr2 #td3{
+    width:18%;
+}
+
+.tr2 #td4{
+    width:15%;
+}
+
+form{
+
+    margin-top:20%;
+    width:90%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    background:var(--color-fondo);
+    align-self: center;
+}
+
+@media(min-width: 640px){
+
+    .cabecera{
+        margin:0;
+        justify-content: space-between;
+
+    }
+    
+    form{
+        margin-top:10%;
+        width:80%;
+    }
+}

@@ -1,0 +1,17 @@
+CREATE TABLE `parci`.vehiculos (
+	placa varchar(7) NOT NULL,
+	marca varchar(12) NOT NULL,
+	modelo varchar(12) NOT NULL,
+	version varchar(12) NOT NULL,
+	color varchar(12) NOT NULL,
+	numPuestos VARCHAR(2) NOT NULL,
+	numPuertas varchar(2) NOT NULL,
+	combustible varchar(12) NOT NULL,
+	kilometros varchar(255) NOT NULL,
+	cilindraje varchar(5) NOT NULL,
+	categoria varchar(100) NOT NULL,
+	CONSTRAINT vehiculos_PK PRIMARY KEY (placa)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=latin1
+COLLATE=latin1_swedish_ci;
